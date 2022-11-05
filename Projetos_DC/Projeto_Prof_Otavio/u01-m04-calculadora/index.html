@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/claculator.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div id="containerMain">
+        <div id="containerDisplay">
+            0
+        </div>
+        <code>
+            <div id="containerKeyboard">
+                <button onclick="handleKey(this)" id="clear">C</button>
+                <button onclick="handleKey(this)" class="operator">&#8730;</button>
+                <button onclick="handleKey(this)" class="operator">x&sup2;</button>
+                <button onclick="handleKey(this)" class="operator">&#247;</button>
+                <button onclick="handleKey(this)">7</button>
+                <button onclick="handleKey(this)">8</button>
+                <button onclick="handleKey(this)">9</button>
+                <button onclick="handleKey(this)" class="operator">x</button>
+                <button onclick="handleKey(this)">4</button>
+                <button onclick="handleKey(this)">5</button>
+                <button onclick="handleKey(this)">6</button>
+                <button onclick="handleKey(this)" class="operator">-</button>
+                <button onclick="handleKey(this)">1</button>
+                <button onclick="handleKey(this)">2</button>
+                <button onclick="handleKey(this)">3</button>
+                <button onclick="handleKey(this)" class="operator">+</button>
+                <button onclick="handleKey(this)" class="operator">&mp;</button>
+                <button onclick="handleKey(this)">0</button>
+                <button onclick="handleKey(this)">.</button>
+                <button onclick="handleKey(this)" id="equals">=</button>
+            </div>
+        </code>
+    </div>
+    <script src="scripts/calculator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+:root {
+  --scale: 2;
+  --mainWidth: calc(var(--scale) * 9rem);
+  --mainTop: calc(var(--scale) * 2rem);
+
+  --displayHeight: calc(var(--scale) * 1.6rem);
+  --displayPaddingTopBottom: 0;
+  --displayPaddingLeftRight: calc(var(--scale) * 0.4rem);
+
+  --keyboardTop: calc(var(--scale) * 1rem);
+  --keyboardBottom: calc(var(--scale) * 1rem);
+
+  --keyWidith: calc(var(--scale) * 1.5rem);
+  --keyHeight: calc(var(--scale) * 1.5rem);
+  --keyGap: calc(var(--scale) * 0.3rem);
+  --keyFontSize: calc(var(--scale) * 1rem);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+#containerMain {
+  margin: var(--mainTop);
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--mainWidth);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+
+#containerDisplay {
+  height: var(--displayHeight);
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: var(--displayPaddingTopBottom) var(--displayPaddingLeftRight) var(--displayPaddingTopBottom) var(--displayPaddingLeftRight);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--keyFontSize);
+}
+
+#containerKeyboard {
+  margin-top: var(--keyboardTop);
+  margin-bottom: var(--keyboardBottom);
+  display: grid;
+  grid-template-rows: repeat(5, var(--keyWidith));
+  grid-template-columns: repeat(4, var(--keyHeight));
+  justify-content: space-around;
+  gap: var(--keyGap);
+}
+
+#containerKeyboard > button {
+  border-radius: 50%;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--keyFontSize);
+}
+
+#containerKeyboard > button.operator {
+  color: lawngreen;
+}
+
+#containerKeyboard > button#clear {
+  color: red;
+}
+
+#containerKeyboard > button#equals {
+  background-color: red;
+}
