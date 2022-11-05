@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Form Select Datalist Textarea</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>&lt;select&gt; / &lt;datalist&gt; / &lt;textarea&gt; - Pesquisar em: <a
+                    href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">www.w3schools.com</a>
+            </legend>
+            <div class="container">
+                <div class="item-block">
+                    <h3>&lt;select selected&gt;</h3>
+                    <label for="cars1">Choose a car:</label>
+                    <select id="cars1" name="cars1">
+                        <option value="audi">Audi</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="saab">Saab</option>
+                        <option value="volvo" selected>Volvo</option>
+                    </select>
+                </div>
+                <div class="item-block">
+                    <h3>&lt;select size&gt;</h3>
+                    <label for="cars2">Choose a car:</label>
+                    <select id="cars2" name="cars2" size="2">
+                        <option value="audi">Audi</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="saab">Saab</option>
+                        <option value="volvo">Volvo</option>
+                    </select>
+                </div>
+                <div class="item-block">
+                    <h3>&lt;select multiple&gt;</h3>
+                    <label for="cars3">Choose a car:</label>
+                    <select id="cars3" name="cars3" multiple>
+                        <option value="audi">Audi</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="saab">Saab</option>
+                        <option value="volvo">Volvo</option>
+                    </select>
+                </div>
+                <div class="item-block">
+                    <h3>&lt;input list&gt;</h3>
+                    <h3>&lt;datalist&gt;</h3>
+                    <label for="cars4">Choose a car:</label>
+                    <input id="cars4" name="cars4" list="cars4List">
+                    <datalist id="cars4List" name="cars4List">
+                        <option value="Audi"></option>
+                        <option value="Fiat"></option>
+                        <option value="Saab"></option>
+                        <option value="Volvo"></option>
+                    </datalist>
+                </div>
+                <div class="item-block">
+                    <h3>&lt;input list pattern&gt;</h3>
+                    <h3>&lt;datalist&gt;</h3>
+                    <label for="cars5">Choose a car:</label>
+                    <input id="cars5" name="cars5" list="cars5List" pattern="[Aa]udi|[Ff]iat|[Ss]aab|[Vv]olvo">
+                    <datalist id="cars5List" name="cars5List">
+                        <option value="Audi"></option>
+                        <option value="Fiat"></option>
+                        <option value="Saab"></option>
+                        <option value="Volvo"></option>
+                    </datalist>
+                </div>
+                <div class="item-block">
+                    <h3>&lt;textarea&gt;</h3>
+                    <label for="message">Write a message:</label>
+                    <textarea id="message" name="message" rows="10" cols="30"></textarea>
+                </div>
+                <div>
+                    <h3>&lt;input type="reset"&gt;</h3>
+                    <input type="reset" value="Limpar">
+                </div>
+                <div>
+                    <h3>&lt;input type="submit"&gt;</h3>
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

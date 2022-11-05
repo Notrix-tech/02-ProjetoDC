@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+#containerMain,
+#containerButtons {
+  margin: 20px auto;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#containerMain {
+  align-items: flex-end;
+}
+
+input {
+  width: 80px;
+}
+
+input[type="number"] {
+  text-align: right;
+}
+
+input,
+select,
+span {
+  height: 23px;
+}

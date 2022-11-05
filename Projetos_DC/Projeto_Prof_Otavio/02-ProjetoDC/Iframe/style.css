@@ -1,0 +1,20 @@
+#btn, #myIframe {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;;
+}
+
+#myIframe[hidden] {
+  display: none;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+.flex-container .flex-item {
+  margin: 1em;
+}

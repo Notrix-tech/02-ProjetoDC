@@ -1,0 +1,11 @@
+:root {
+  --containerWidth: 80vw;
+  --containerHeaderHeight: 10vh;
+  --containerNavWidth: 30vh;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  

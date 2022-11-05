@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/index.js" defer></script>
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <h2>Jogo da Velha</h2>
+    <div id="jogIni">
+        <label for="jogadorInicial">Jogador Inicial </label>
+        <select name="jogadorInicial" id="jogadorInicial" onchange="setFirstPlayer()">
+            <option value="X">X</option>
+            <option value="O">O</option>
+        </select>
+    </div>
+    <div id="jogador"></div>
+    <div class="grid-container">
+        <div onclick="mark(this)"></div>
+        <div onclick="mark(this)"></div>
+        <div onclick="mark(this)"></div>
+        <div onclick="mark(this)"></div>
+        <div onclick="mark(this)"></div>
+        <div onclick="mark(this)"></div>
+        <div onclick="mark(this)"></div>
+        <div onclick="mark(this)"></div>
+        <div onclick="mark(this)"></div>
+    </div>
+    <div id="message"></div>
+    <input id="restart" type="hidden" value="Reiniciar" onclick="restart()">
+</body>
+
+</html>

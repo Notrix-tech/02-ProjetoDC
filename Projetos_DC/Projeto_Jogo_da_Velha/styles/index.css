@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+header {
+	background: #BBBBBB;
+	padding: 60px;
+    
+ }  
+nav {
+    position: absolute;
+	top:30px;
+    right: 60px;
+	
+}
+nav li {
+	display: inline;
+	
+}
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;        
+    
+}
+#cabecalho {
+    padding: 40px;
+    margin: auto;
+    position: relative;
+   
+}
+
+#tabuleiro {
+    margin: 50px auto;
+    padding: 10px 10px;
+    background-color: brown;
+    width: 360px;
+    height:360px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#tabuleiro > div {
+    border: 1px solid red;
+    background-color: burlywood;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    
+}
+section div {
+    padding: 60px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+aside div {
+    padding: 60px;
+     display: block;
+    justify-content:space-between ;
+    
+
+}
+footer div {
+    
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    background: #BBBBBB;
+}
+.regras {
+    padding:10px auto;
+    margin: 20px auto;
+   
+
+    
+}

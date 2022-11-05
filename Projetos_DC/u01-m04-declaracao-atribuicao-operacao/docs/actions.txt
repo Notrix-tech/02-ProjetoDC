@@ -1,0 +1,14 @@
+FONTE
+=====
+
+    https://www.w3schools.com/js/js_operators.asp
+
+SOLUÇÕES
+========
+
+    01
+    --
+
+    (function injectIframe() {
+    document.querySelector("iframe").contentWindow.document.body.innerHTML='<div id="divMain"></div>';
+    })();

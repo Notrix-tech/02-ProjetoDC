@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+#tabuleiro {
+  background-color: brown;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  margin: 20px auto 0 auto;
+}
+
+#tabuleiro > div {
+  background-color: burlywood;
+  width: 75px;
+  height: 75px;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#messages {
+  border: 1px solid brown;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 240px;
+  height: 80px;
+  text-align: center;
+  font-size: large;
+}

@@ -1,0 +1,33 @@
+@import 'vars.css';
+
+h2 {
+  margin: 5px 0px;
+  text-align: center;
+  color: indianred;
+}
+
+body {
+  background-color: papayawhip;
+  margin: 0px;
+}
+
+div {
+  width: var(--containerWidth);
+  margin: auto;
+  display: flex;
+}
+
+#divContainerRow {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+#divContainerCol {
+  flex-direction: column;
+  height: 80vh;
+}
+
+#iframeMain {
+  height: inherit;
+}

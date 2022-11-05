@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="navegacao">
+            <nav>
+        <ul>
+            <li>
+                <a href="Inicio.html">Inicio</a>
+            </li>
+            <li>
+                <a href="jogo.html">Vamos Jogar</a>
+            </li>
+            <li>
+                <a href="sobremim.html">Sobre mim</a>
+            </li>
+
+        </ul>
+    </nav>
+        </div>
+    </header>
+    <main class="regras">
+        <div>
+            <h3>Regas do Jogo:</h3>
+            <ul>
+                <li>Jogam duas pessoas, que jogam alternadamente;</li>
+                <li>Preenchendo cada um dos espaços vazios. Cada participante poderá usar um símbolo (X ou O).</li>
+                <li>Vence o jogador que conseguir formar primeiro uma linha com três símbolos iguais, seja ela na horizontal, vertical ou diagonal.</li>
+                
+                
+            </ul>
+        </div>
+    </main>
+</div>
+<div id="tabuleiro">
+    <div onclick="mark(this)"></div><!--This rebece o proprio elemento div-->
+    <div onclick="mark(this)"></div>
+    <div onclick="mark(this)"></div>
+    <div onclick="mark(this)"></div>
+    <div onclick="mark(this)"></div>
+    <div onclick="mark(this)"></div>
+    <div onclick="mark(this)"></div>
+    <div onclick="mark(this)"></div>
+    <div onclick="mark(this)"></div>
+
+
+</div>
+
+
+
+<script src="scripts/index.js"></script>
+</body>
+<footer>
+    <div>
+        &copy; 2022 Clairton Lima 
+    </div>
+</footer>
+</html>

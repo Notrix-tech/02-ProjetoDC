@@ -1,0 +1,67 @@
+@import "vars.css";
+
+header {
+  background-color: burlywood;
+  color: darkred;
+}
+
+#containerHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--containerHeaderHeight);
+}
+
+#containerMaster {
+  display: flex;
+  background-color: papayawhip;
+  height: calc(100vh - var(--containerHeaderHeight));
+}
+
+#containerNav {
+  display: flex;
+  flex-direction: column;
+  width: var(--containerNavWidth);
+}
+
+#containerMain {
+  display: flex;
+  width: calc(100vw - var(--containerNavWidth));
+}
+
+#iframeMaster {
+  display: flex;
+  border: none;
+  width: inherit;
+  height: inherit;
+  align-items: stretch;
+}
+
+/*
+  MENU DEW NAVEGAÇÃO
+*/
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: moccasin;
+}
+
+li a {
+  display: block;
+  color: darkred;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: chocolate;
+  color: white;
+}
